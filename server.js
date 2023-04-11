@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ limit:'10mb', extended:false }))
 app.use(methodOverride('_method'))
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.CYCLIC_DB)
+mongoose.connect(process.env.DATABASE_URL)
 const db = mongoose.connection
 db.on('error', (err) => console.log('error'));
 db.once('open', () => console.log("Connected to Mongoose!"));
