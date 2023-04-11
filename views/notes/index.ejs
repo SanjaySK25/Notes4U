@@ -1,0 +1,18 @@
+<div class="container">
+
+<h2 class="page-header">Search</h2>
+
+<form action="/notes" method="GET">
+
+<label class="searchLabel">Title</label>
+<input type="text" class="searchBox" name="title" value="<%= searchOptions.title %>" placeholder="Enter note title">
+
+<button class="search-btn" type="submit">Search</button>
+
+<hr>
+
+</form>
+
+<%- include('../partials/renderNotes.ejs') %>
+
+</div>

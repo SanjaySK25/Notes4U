@@ -1,0 +1,16 @@
+<div class="container">
+
+<h2 class="page-header">Edit Note</h2>
+
+<form action="/notes/<%= note.id %>?_method=PUT" method="POST">
+
+    <%- include('_edit_new_form.ejs') %>
+
+    <div class="btn-row">
+        <a class="btn btn-danger" href="/notes">Cancel</a>
+        <button class="btn btn-safe btn-left" type="submit">Update</button>
+    </div>
+
+</form>
+
+</div>

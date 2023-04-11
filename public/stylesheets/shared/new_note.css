@@ -1,0 +1,42 @@
+:root {
+    --input-field-background-color: hsl(var(--base-color-hue),100%,90%);
+    --text-area-background-color: hsl(var(--base-color-hue),100%,90%);
+
+    --field-border-color: hsl(var(--base-color-hue),100%,83%);
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fields input{
+    font-size: 1.5rem;
+    height: 2.9rem;
+    width: 36.2rem;
+    background-color: var(--input-field-background-color);
+    color: var(--title-font-color);
+}
+
+.form-fields textarea{
+    font-size: 1.2rem;
+    height: 10rem;
+    resize: none;
+    background-color: var(--text-area-background-color);
+    color: var(--description-font-color);
+}
+
+.form-fields input, textarea{
+    border-radius: 15px;
+    padding: 0.2rem;
+    border: 5px solid hsl(var(--base-color-hue),100%,73%);
+}
+
+.form-fields input:focus, textarea:focus{
+    border: 5px solid hsl(var(--base-color-hue),100%,57%);
+}
+
+.form-fields label{
+    color: hsl(0,100%,50%);
+    font-size: 1.5rem;
+}

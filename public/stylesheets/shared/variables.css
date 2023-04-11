@@ -1,0 +1,7 @@
+:root {
+    --base-color-hue: 400;
+    --page-header-color-hue: 200;
+    --base-background-color-dark: hsl(var(--base-color-hue),50%,37%);
+    --base-background-color-light: hsl(var(--base-color-hue),50%,83%);
+    --page-header-color: hsl(var(--base-color-hue),50%,47%);
+}

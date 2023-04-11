@@ -1,0 +1,92 @@
+:root{
+    --danger-color: hsl(0,100%,53%);
+    --safe-color: hsl(100,100%,53%);
+
+    --danger-color-light: hsl(0,100%,73%);
+    --safe-color-light: hsl(100,100%,73%);
+}
+
+.btn{
+    margin-top: 0.8rem;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn-delete-show{
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+    height: 2.2rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.btn-edit-show{
+    padding: 1.1rem;
+}
+
+.btn-row{
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-row-show{
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-btn{
+    margin-top: 0.8rem;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.4rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--safe-color);
+    align-items: center;
+    font-size: 25px;
+    color: hsl(100,100%,23%);
+}
+
+.search-btn:hover{
+    background-color: var(--safe-color-light);
+    color: hsl(100,100%,33%);
+}
+
+.btn-danger{
+    background-color: var(--danger-color);
+    color:  hsl(0,100%,23%);
+}
+
+.btn-danger:hover{
+    background-color: var(--danger-color-light);
+    color: hsl(0,100%,33%);
+}
+
+.btn-safe:hover{
+    background-color: var(--safe-color-light);
+    color: hsl(100,100%,33%);
+}
+
+.btn-safe{
+    background: var(--safe-color);
+    height: 2.25rem;
+    padding-top: 0.55rem;
+    align-items: center;
+    font-size: 25px;
+    color: hsl(100,100%,23%);
+}
+
+.btn-left{
+    margin-left: 1rem;
+}

@@ -1,0 +1,86 @@
+:root{
+    --border-radius-note: 1rem;
+    --title-background-color: hsl(var(--base-color-hue),100%,73%);
+    --title-font-color: hsl(var(--base-color-hue),100%,40%);
+    --description-font-color: hsl(var(--base-color-hue),100%,57%);
+    --btn-state: none;
+    --note-border: 0px solid;
+}
+
+.note-title, .note-description{
+    text-align: left;
+    padding-left: 2%;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.index-button{
+    text-decoration: none;
+}
+
+.note-nav ul{
+    display: var(--btn-state);
+    padding: 0;
+    margin: 0;
+}
+
+.note-nav li{
+    list-style: none;
+}
+
+.delete-btn{
+    font-size: 1.38rem;
+    background: none;
+    border: none;
+}
+
+.delete-btn, .view-btn, .edit-btn{
+    text-align: end;
+}
+
+.note-title{
+    padding-top: 0%;
+    border-top-left-radius: var(--border-radius-note);
+    border-top-right-radius: var(--border-radius-note);
+    background-color: var(--title-background-color);
+    color: var(--title-font-color);
+    font-size: 1.4rem;
+}
+
+.note-title:hover, .note-description:hover{
+    border: 3px solid;
+    --btn-state: flex;
+}
+
+
+.note-description{
+    border-top: 0px;
+    border-bottom-left-radius: var(--border-radius-note);
+    border-bottom-right-radius: var(--border-radius-note);
+    background-color: white;
+    color: var(--description-font-color);
+    padding: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.note-gap{
+    width: 5px;
+}
+
+.searchBox{
+    margin-top: 0.8rem;
+    border: 1px solid black;
+    padding: 0.4rem;
+    height: 2rem;
+    border-radius: 10px;
+    background: lightgray;
+    font-size: 25px;
+    color: var(--title-font-color);
+}
+
+.searchLabel{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: hsl(var(--base-color-hue),100%,43%);
+}

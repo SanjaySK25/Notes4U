@@ -1,0 +1,41 @@
+<div class="container">
+
+<div class="page-header">View Note</div>
+
+<br>
+<br>
+
+
+<div class="note-title note-title-grow">
+
+<h2>
+  
+    <%= note.title %></h2>
+
+</div>
+
+
+
+<div class="note-description note-description-grow">
+
+
+<%= note.description %>
+
+<br>
+<br>
+
+</div>
+
+
+
+<div class="btn-row">
+
+    <a class="btn btn-safe btn-edit-show" href="/notes/<%= note.id %>/edit">Edit</a>
+
+    <form action="/notes/<%= note.id %>?_method=DELETE" method="POST">
+        <button class="btn-delete-show btn-danger  btn-left" type="submit">Delete</button>
+    </form>
+
+</div>
+
+</div>
